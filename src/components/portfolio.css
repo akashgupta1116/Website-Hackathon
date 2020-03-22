@@ -1,0 +1,91 @@
+
+.portfolio-container{
+    overflow-x: hidden;
+}
+.portfolio-top{
+    width:100%;
+    height:330px;
+    /* border-bottom: 1px solid ; */
+    background-image: url('saif-partners.jpg');
+    background-position: center;
+    background-size: cover;    
+}
+.portfolio-span{
+    font-size:160px;
+    font-family:"Circular";
+    font-weight: bold;
+    position: relative;
+    top:80px;
+    left:150px;
+    animation-name: portfolio;
+    animation-duration: 1500ms;
+}
+@keyframes  portfolio{
+    0%{top:-250px;}
+    100%{top:80px}
+}
+.private-companies{
+    height:40px;
+    width:18%;
+    border-radius:50px;
+    background-color: rgb(54,54,54);
+    border:none;
+    color:white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.public-compamies{
+    margin-left:2%;
+    height:40px;
+    width:18%;
+    border-radius:50px;
+    background-color: rgb(203,203,203);
+    border:none;
+    color:black;
+    font-weight: 700;
+    cursor: pointer
+}
+.companies-div{
+    margin-bottom:3%
+}
+.portfolio-third1-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 3%;
+}
+.portfolio-third1-list-element{
+    /* margin-left: 10px; */
+    font-size: 75%;
+    color: rgb(106,113,133);
+    text-decoration: none;
+}
+.third2{
+    /* height:1000px; */
+    margin-top:10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom:30px;    
+}
+.third2-element{
+    padding-left:4%;
+    height:275px;
+    width:25%; 
+    /* border:1px solid; */
+    background-color: rgb(249,249,249);
+    margin-top:40px;
+    cursor: pointer
+}
+.third2-element:hover{
+    background-color: rgb(63, 197, 214);
+}
+.element-image{
+    height:100px;
+    width:100px;
+    padding-top: 90px;
+    padding-left: 45px;
+}

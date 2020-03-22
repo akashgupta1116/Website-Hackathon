@@ -1,0 +1,92 @@
+.team-container{
+    overflow-x: hidden;
+}
+.team-top{
+    width:100%;
+    height:330px;
+    /* border-bottom: 1px solid ; */
+    /* background-image: url('saif-partners.jpg'); */
+    /* background-position: center; */
+    /* background-size: cover;     */
+}
+.team-span{
+    font-size:160px;
+    font-family:"Circular";
+    font-weight: bold;
+    position: relative;
+    top:80px;
+    left:150px;
+    animation-name: team;
+    animation-duration: 1500ms;
+}
+@keyframes team{
+    0%{top:-250px;}
+    100%{top:80px}
+}
+.team-third1-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 3%;
+}
+.team-third1-list-element{
+    /* margin-left: 10px; */
+    font-size: 75%;
+    color: rgb(106,113,133);
+    text-decoration: none;
+    margin-right:30px;
+}
+.team-third2-element{
+    padding-left:1%;
+    height:275px;
+    width:20%; 
+    /* border:1px solid; */
+    /* background-color: rgb(249,249,249); */
+    margin-top:40px;
+}
+.team-third2-element:hover{
+    /* background-color: rgb(63, 197, 214); */
+    cursor: pointer    
+}
+.team-element-image{
+    width:100%;
+    height:80%;
+}
+.team-element-person{
+    font-weight: 700;
+    font-family: 'Next';
+    font-size: 12px;
+    margin-bottom: 0px;
+    width:80%;
+    /* margin-right: 0px; */
+    display: inline-block
+}
+.team-person-info{
+    display: inline-block;
+    font-size: 12px;
+    margin-top:0px;
+    width:80%
+}
+.cross-icon{
+    background-image: url('cross.png');
+    display: inline-block;
+    height:20px;
+    width:20px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top:10px;
+    left:10px;
+}
+.team-third3{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.team-third3-content{
+    font-size:10px;
+    color: rgb(106,113,133);
+    line-height: 2
+}

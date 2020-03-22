@@ -1,0 +1,225 @@
+.reach-container{
+    overflow-x: hidden;
+}
+.home-link{
+    margin-top: 16px;
+}
+.nav-list{
+    display: inline-block;
+    list-style: none;
+    width:30%;
+}
+
+.list-element{
+    display: inline-block;
+    margin-left: 5%;
+    /* text-decoration: none; */
+}
+.list-links{
+    text-decoration: none;
+    color: black;
+    font-size: 73%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+.reach-top{
+    width:100%;
+    height:330px;
+    /* border-bottom: 1px solid ; */
+    /* background-image: url('saif-partners.jpg'); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    
+}
+.reachUs-span{
+    font-size:160px;
+    font-family:"Circular";
+    font-weight: bold;
+    position: relative;
+    top:100px;
+    left:150px; 
+    animation-name: reachUs;
+    animation-duration: 300ms;
+    /* transform: translateY(50%);
+    transition-duration: 800ms;
+    transition-delay: 0.3s; */
+    /* position: relative; */
+}
+@keyframes reachUs{
+    0%{top:-250px;}
+    100%{top:100px}
+} 
+.reachUs-second{
+    margin-top: 12%;
+    margin-bottom: 7%
+
+}
+.reachUs-second-text{
+    margin-left: 12%;
+    font-size: 25px;
+}
+.reachus-third{
+    margin-top: 70px;
+    margin-left:12%;
+    margin-right:12%;    
+}
+.reachus-third1{
+    display: flex;
+    flex-direction: row;
+    height:1500px;
+}
+.reachus-third1-left{
+    flex: 1
+}
+.reachus-third1-right{
+    flex:2;
+    padding-left:15%
+}
+.send-message-text{
+    font-size: 159%;
+    font-weight: 700;
+    margin-bottom: 15%;
+}
+.consumer-list{
+    border-bottom: 2px solid black;
+    border-right:none;
+    border-left:none;
+    border-top:none;
+    background-color: white;
+    width:80%;
+    outline: none;
+    font-weight: 700;
+    font-size: 13px;
+    color:rgb(106,113,133);
+}
+.name-form{
+    position: relative;
+    width:100%;
+    height:100px; 
+ }
+.name-input{
+    /* margin-left: 4%; */
+    width:80%;
+    height:90%;
+    padding-top:40px;
+    border: none;
+    outline: none;
+}
+.label-name-reach{
+    /* margin-left: 1%; */
+    position: absolute;
+    bottom: 0px;
+    left:0%;
+    width:80%;
+    height:100%;
+    /* background-color: blue; */
+    pointer-events: none;
+    border-bottom: 2px solid black;
+    color:rgb(106,113,133);
+    font-size: 15px
+}
+.label-name-reach::after{
+    content: '';
+    position: absolute;
+    left:0px;
+    height:100%;
+    width:100%;
+}
+.name-input:focus +.label-name-reach .reach-content-name, .name-input:valid + .label-name-reach .reach-content-name {
+    transform: translateY(-500%);
+    font-size: 10px;
+}
+.reach-content-name{
+    position: absolute;
+    bottom:5px;
+    left:0px;   
+    transition: all 0.3s ease;
+}
+.file-info{
+    margin-top:12%;
+    width:80%
+}
+.file-attachment{
+    font-size:74%;
+    font-weight: 700;
+    margin-bottom:3%;
+}
+.file-instructions{
+    font-size: 60%;
+    margin-top:0px;
+    color: rgb(106,113,133);
+    letter-spacing: 1px;
+}
+.file-upload{
+    margin-top:7%
+}
+.send-btn{
+    margin-top: 17%;
+    /* margin-left:4%; */
+    width:80%;
+    height:5%;
+    background-color: white;
+    border-color: black;
+    font-weight:700;
+    font-family: 'Next';
+    letter-spacing: 1px;
+    outline: none;
+}
+.send-btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.find-us{
+    font-size: 159%;
+    font-weight: 700;
+    margin-bottom: 7%;
+}
+.address-span{
+    font-size: 77%;
+    font-weight: 700;
+}
+.address-data{
+    font-size: 77%;
+    color: rgb(106,113,133)
+}
+.reachus-contacts{
+    margin-top:5%
+}
+.reachus-email{
+    display:inline-block;
+}
+.email-span{
+    font-size:77%;
+    font-weight: 700;
+}
+.email-data{
+    font-size: 77%;
+    color: rgb(106,113,133);
+    text-decoration: none
+}
+.phone{
+    display:inline-block;
+    margin-left: 10%;
+}
+.phone-span{
+    font-size:77%;
+    font-weight: 700;
+}
+.phone-data{
+    font-size: 77%;
+    color: rgb(106,113,133);
+    text-decoration: none
+}
+iframe{
+    width:100%;
+    height:30%;
+    margin-bottom: 7%
+}
+.phone2{
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
