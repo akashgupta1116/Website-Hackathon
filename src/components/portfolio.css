@@ -24,7 +24,7 @@
     0%{top:-250px;}
     100%{top:80px}
 }
-.private-companies{
+.selectedCompany{
     height:40px;
     width:18%;
     border-radius:50px;
@@ -33,9 +33,9 @@
     color:white;
     font-weight: 700;
     cursor: pointer;
+    outline: 0;
 }
-.public-compamies{
-    margin-left:2%;
+.nonSelectedCompany{
     height:40px;
     width:18%;
     border-radius:50px;
@@ -43,7 +43,8 @@
     border:none;
     color:black;
     font-weight: 700;
-    cursor: pointer
+    cursor: pointer;
+    outline: 0;
 }
 .companies-div{
     margin-bottom:3%

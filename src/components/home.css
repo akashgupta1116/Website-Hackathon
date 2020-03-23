@@ -1,0 +1,62 @@
+.left-1{
+    padding-top: 20%;
+}
+.paytm{
+    font-size:37px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+.paytm-info{
+    font-size: 16px;
+}
+.left-2{
+
+}
+.left-2-left{
+    display:inline-block;
+}
+.m220{
+    font-size: 37px;
+    font-weight: 700;
+}
+.vertical-line{
+    display: inline-block;
+    height:100px;
+    border-left:3px solid;
+    margin-left:5%
+}
+.left-2-right{
+    display:inline-block;
+    margin-left:5%
+}
+.m5{
+    font-size: 37px;
+    font-weight: 700;
+}
+.m220-info{
+    font-size: 12px;
+}
+.m5-info{
+    font-size:12px;
+}
+.left-3{
+    margin-top:5%
+}
+.company-info{
+    font-size: 12px;
+}
+.vijay{
+    font-size:12px;
+    font-weight:700
+}
+.vijay-info{
+    font-size: 12px;
+}
+.learn-more-btn{
+    background:transparent;
+    border:1px solid;
+    height:40px;
+    width:150px;
+    margin-top:7%;
+    margin-left:53%
+}

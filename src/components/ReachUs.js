@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Header from './header';
 import './reachUs.css'
+import Footer from './footer';
 
 
 class ReachUs extends Component {
@@ -49,18 +51,7 @@ class ReachUs extends Component {
         return (
             <div className="reach-container">
                 <div className="reach-top">
-                    <header>
-                        <nav>
-                            <a className="home-link" href='#'>HOME</a>
-                            <ul className="nav-list">
-                                <li className="list-element"><a className="list-links" href="#">PORTFOLIO</a></li>
-                                <li className="list-element"><a className="list-links" href="#">TEAM</a></li>
-                                <li className="list-element"><a className="list-links" href="#">ABOUT</a></li>
-                                <li className="list-element"><a className="list-links" href="#">NEWS</a></li>
-                                <li className="list-element"><a className="list-links" href="#">REACH US</a></li>
-                            </ul>    
-                        </nav> 
-                    </header>   
+                <Header/>  
                     <h1 className='reachUs-span'> Reach Us</h1>
                 </div>
                 <div className="reachUs-second" >
@@ -140,37 +131,7 @@ class ReachUs extends Component {
                             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-eI_E5z8DDkRAtEWYgpJaM8&key=AIzaSyAq8CxICyJcYARvFnMPogxIjTy8DmgLMO0" allowfullscreen></iframe>   
                         </div>       
                     </div>
-                    <hr/>
-                    <div className="third5">
-                        <div className="third5-1">
-                            <p className="discover">Discover</p>
-                            <ul className="discover-list">
-                                <li ><a className="discover-list-element"href='#'>Portfolio</a></li>
-                                <li><a className="discover-list-element" href='#'>Team</a></li>
-                                <li><a className="discover-list-element" href='#'>About</a></li>
-                                <li><a className="discover-list-element" href='#'>News</a></li>
-                                <li><a className="discover-list-element" href='#'>Reach Us</a></li>
-                            </ul>    
-                        </div>
-                        <div className="third5-2">
-                            <p className="discover">Connect</p>
-                            <ul className="discover-list">
-                                <li ><a className="discover-list-element"href='#'>+91-124 4965500</a></li>
-                                <li><a className="discover-list-element" href='#'>info@saifpartners.com</a></li>
-                            </ul>    
-                        </div>
-                        <div className="third5-3">
-                            <p className="discover">Subscribe To Our Newsletter </p>
-                            <div className="form">
-                                <input className="email-address-input" onChange={this.emailHandler} required type="text" value={this.state.emailAdress} />
-                                <label for='name' className="label-name" > <span className="content-name">Type your email address here please</span></label>
-                            </div>
-                            <input className="subscribe-btn"  type="submit" value={this.state.subscribe}/>
-                        
-                        </div>    
-                    </div>  
-                    <hr/>  
-                    <p className="all-rights">@2017 SAIF Partners.All Rights Reserved</p>    
+                    <Footer />  
                 </div>    
             </div>
 

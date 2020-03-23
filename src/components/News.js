@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Header from './header';
 import './news.css';
+import Footer from './footer';
 
 
 class News extends Component {
@@ -7,18 +9,7 @@ class News extends Component {
         return (
             <div className="news-container">
                 <div className="news-top">
-                    <header>
-                        <nav>
-                            <a className="home-link" href='#'>HOME</a>
-                            <ul className="nav-list">
-                                <li className="list-element"><a className="list-links" href="#">PORTFOLIO</a></li>
-                                <li className="list-element"><a className="list-links" href="#">TEAM</a></li>
-                                <li className="list-element"><a className="list-links" href="#">ABOUT</a></li>
-                                <li className="list-element"><a className="list-links" href="#">NEWS</a></li>
-                                <li className="list-element"><a className="list-links" href="#">REACH US</a></li>
-                            </ul>    
-                        </nav> 
-                    </header>   
+                    <Header/>
                     <h1 className='news-span'> News</h1>
                 </div>
                 <div className="second" >
@@ -27,8 +18,17 @@ class News extends Component {
                 </div>
                 <div className="third">
                     <hr/>
+                    <div className="news-third1">
+                        <div className="news-third1-left">
+                            <p className="press">Press</p>
+                        </div>
+                        <div className="news-third1-right">
+                            <p className="insights">Insights</p>
+                        </div>
+
+                    </div>
+                    <Footer />  
                 </div>    
-                
             </div>
         );
     }

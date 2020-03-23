@@ -23,3 +23,20 @@
     0%{top:-250px;}
     100%{top:80px}
 }
+.news-third1{
+    display: flex;
+}
+.news-third1-left{
+    flex:2
+}
+.press{
+    font-size: 30px;
+    font-weight:700
+}
+.news-third1-right{
+    flex:1
+}
+.insights{
+    font-size:30px;
+    font-weight: 700
+}

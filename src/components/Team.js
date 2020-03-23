@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Header from './header';
 import './team.css';
+import Footer from './footer';
 
 class Team extends Component {
     constructor(props){
@@ -29,18 +31,7 @@ class Team extends Component {
         return (
             <div className="team-container">
                  <div className="team-top">
-                    <header>
-                        <nav>
-                            <a className="home-link" href='#'>HOME</a>
-                            <ul className="nav-list">
-                                <li className="list-element"><a className="list-links" href="#">PORTFOLIO</a></li>
-                                <li className="list-element"><a className="list-links" href="#">TEAM</a></li>
-                                <li className="list-element"><a className="list-links" href="#">ABOUT</a></li>
-                                <li className="list-element"><a className="list-links" href="#">NEWS</a></li>
-                                <li className="list-element"><a className="list-links" href="#">REACH US</a></li>
-                            </ul>    
-                        </nav> 
-                    </header>   
+                 <Header/>  
                     <h1 className='team-span'> Team</h1>
                 </div>
                 <div className="second" >
@@ -72,37 +63,7 @@ class Team extends Component {
                     <div className="team-third3">
                         <p className="team-third3-content">Please note that the term ‘SAIF Partners’ or ‘SAIF’ is used and referred to in the website generally for ease of reference and does not refer to any one entity or organisation. The teams, investing companies and addresses mentioned here may belong to or form part of different and independent organisations and entities having separate legal existence. Members of the investment advisory team noted above are engaged with Light Ray Advisors LLP</p>
                     </div>
-                    <hr/>
-                    <div className="third5">
-                        <div className="third5-1">
-                            <p className="discover">Discover</p>
-                            <ul className="discover-list">
-                                <li ><a className="discover-list-element"href='#'>Portfolio</a></li>
-                                <li><a className="discover-list-element" href='#'>Team</a></li>
-                                <li><a className="discover-list-element" href='#'>About</a></li>
-                                <li><a className="discover-list-element" href='#'>News</a></li>
-                                <li><a className="discover-list-element" href='#'>Reach Us</a></li>
-                            </ul>    
-                        </div>
-                        <div className="third5-2">
-                            <p className="discover">Connect</p>
-                            <ul className="discover-list">
-                                <li ><a className="discover-list-element"href='#'>+91-124 4965500</a></li>
-                                <li><a className="discover-list-element" href='#'>info@saifpartners.com</a></li>
-                            </ul>    
-                        </div>
-                        <div className="third5-3">
-                            <p className="discover">Subscribe To Our Newsletter </p>
-                            <div className="form">
-                                <input className="email-address-input" onChange={this.emailHandler} required type="text" value={this.state.emailAdress} />
-                                <label for='name' className="label-name" > <span className="content-name">Type your email address here please</span></label>
-                            </div>
-                            <input className="subscribe-btn"  type="submit" value={this.state.subscribe}/>
-                        
-                        </div>    
-                    </div>  
-                    <hr/>  
-                    <p className="all-rights">@2017 SAIF Partners.All Rights Reserved</p>     
+                    <Footer />     
                 </div>
             </div>
         );
