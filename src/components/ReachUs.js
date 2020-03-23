@@ -117,8 +117,6 @@ class ReachUs extends Component {
                                     <a className="phone-data" href='#'>+91-124 4965500</a>
                                 </div>        
                             </div>
-                            <iframe className="map-1"
-                            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-eI_E5z8DDkRAtEWYgpJaM8&key=AIzaSyAq8CxICyJcYARvFnMPogxIjTy8DmgLMO0" allowfullscreen></iframe>
                             <div className='address'>
                                 <p className='address-span'>Address</p>
                                 <p className='address-data'>SAIF Partners, Indiqube, Leela Galleria, Sixth Floor, No. 23/4, 6th Cross, 60ft Road, Kodihalli, Old Airport Road, Ward No. 88 (Old No. 74), Bengaluru 560008</p>
@@ -126,9 +124,7 @@ class ReachUs extends Component {
                             <div className="phone2">
                                 <p className="phone-span">Phone</p>
                                 <a className="phone-data" href='#'>080-46184600</a>
-                            </div>
-                            <iframe className="map-1"
-                            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-eI_E5z8DDkRAtEWYgpJaM8&key=AIzaSyAq8CxICyJcYARvFnMPogxIjTy8DmgLMO0" allowfullscreen></iframe>   
+                            </div>  
                         </div>       
                     </div>
                     <Footer />  

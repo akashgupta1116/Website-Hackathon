@@ -40,3 +40,57 @@
     font-size:30px;
     font-weight: 700
 }
+.element-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.element{
+    width:40%;
+    margin-top: 2%;
+    height:250px;
+    background-color:#d11d53;
+    margin-right: 2%;
+    color:white;
+}
+.element:hover{
+    cursor: pointer;
+    background-color: #f5f5f5;
+    color: black;
+    transition-property: background;
+    transition-duration: 500ms;
+}
+.date{
+    display: inline-block;
+    padding-top: 20%;
+    padding-left:8%;
+    /* width:80% */
+}
+.news{
+    display: inline-block;
+    /* width:15% */
+    margin-left:40%
+}
+.main-news{
+    font-size:25px;
+    font-weight:700;
+    padding-left: 8%;
+}
+.right-element{
+    margin-top: 25px;
+}
+.main-heading{
+    font-size:16px;
+    font-weight: 700;
+}
+.right-date{
+    display: inline-block;
+    font-size: 15px;
+    color:gray;
+}
+.insights-text{
+    display: inline-block;
+    margin-left: 50%;
+    font-size: 15px;
+    color: gray;
+}

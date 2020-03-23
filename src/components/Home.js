@@ -21,7 +21,7 @@ class Home extends Component {
                 <video style={{'position':'fixed', 'width':'100%', 'height': '100vh','opacity':'0.5'}} className='videoTag' autoPlay loop muted>
                     <source src={backgroundVideo} type='video/mp4' />
                 </video>
-                <div style={{'position': 'relative', 'width':'40%', 'height': '100vh',  'zIndex': '9','paddingLeft':'5%','backgroundColor':'#f5f5f5'}}>
+                <div style={{'position': 'fixed', 'width':'40%', 'height': '100%', 'zIndex': '9','paddingLeft':'5%','backgroundColor':'#f5f5f5'}}>
                     <div className="left-1">
                         <p className="paytm">Paytm</p>
                         <p className="paytm-info">Changing the way india transacts online</p>

@@ -7,7 +7,7 @@ class Header extends Component {
         return (
             <header style={{'position': ''}}>
                 <nav>
-                    <Link to={'/'} className="home-link">HOME</Link>
+                    <Link to={'/'} className="home-link">SAIF Partners</Link>
                     <ul className="nav-list">
                         <li className="list-element"><Link to={'/portfolio'} className="list-links">PORTFOLIO</Link></li>
                         <li className="list-element"><Link to={'/team'} className="list-links">TEAM</Link></li>

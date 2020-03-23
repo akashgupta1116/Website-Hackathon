@@ -160,7 +160,7 @@ nav{
     margin-top: 17%;
     /* margin-left:4%; */
     width:80%;
-    height:5%;
+    height:4%;
     background-color: white;
     border-color: black;
     font-weight:700;
@@ -172,11 +172,16 @@ nav{
     background-color: black;
     color: white;
     cursor: pointer;
+    transition-property: background;
+    transition-duration: 400ms
 }
 .find-us{
     font-size: 159%;
     font-weight: 700;
     margin-bottom: 7%;
+}
+.address{
+    margin-top: 5%
 }
 .address-span{
     font-size: 77%;
