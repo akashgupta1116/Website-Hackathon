@@ -11,8 +11,8 @@ class News extends Component {
             element:[
                 {date:"12,Aug,2019",news:'Twitter leads Usd 100Mn round in Sharecat',heading:'Betting early and helping startups grow',rightDate:"08,Aug,2019"},
                 {date:'11,July,2019',news:'Meesho raises Usd 125Mn from Naspers,Facebook',heading:'Extremely bullish on Saas Startup',rightDate:"09,July,2019"},
-                {date:'10,March,2019',news:'UrbanClap raises USD 75Mn',heading:'SAIF Partners catches them young',rightDate:"08,March,2019"},
-                {date:'08,March,2019',news:'Rivigo gets US Patent for driver relay Tech',heading:'The N.I.K.E framework for India',rightDate:"04,March,2019"},
+                {date:'10,Mar,2019',news:'UrbanClap raises USD 75Mn',heading:'SAIF Partners catches them young',rightDate:"08,Mar,2019"},
+                {date:'08,Mar,2019',news:'Rivigo gets US Patent for driver relay Tech',heading:'The N.I.K.E framework for India',rightDate:"04,Mar,2019"},
                 {date:'04,Jan,2019', news:'Ravi,Mukul and Deepak in Indias top 25 VCs',heading:'The making of Sharecat',rightDate:"01,Jan,2019"},
 
             ]

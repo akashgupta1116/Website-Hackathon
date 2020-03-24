@@ -16,12 +16,12 @@ class Home extends Component {
 
     render () {
         return (
-            <div style={{'height': '100vw', 'width': '100vw'}}>
+            <div  className='home-container'>
                 <div ><Header /></div>
-                <video style={{'position':'fixed', 'width':'100%', 'height': '100vh','opacity':'0.5'}} className='videoTag' autoPlay loop muted>
+                <video className='videoTag' autoPlay loop muted>
                     <source src={backgroundVideo} type='video/mp4' />
                 </video>
-                <div style={{'position': 'fixed', 'width':'40%', 'height': '100%', 'zIndex': '9','paddingLeft':'5%','backgroundColor':'#f5f5f5'}}>
+                <div className="home-left">
                     <div className="left-1">
                         <p className="paytm">Paytm</p>
                         <p className="paytm-info">Changing the way india transacts online</p>

@@ -42,7 +42,7 @@ nav{
     top:100px;
     left:150px; 
     animation-name: reachUs;
-    animation-duration: 300ms;
+    animation-duration: 1500ms;
     /* transform: translateY(50%);
     transition-duration: 800ms;
     transition-delay: 0.3s; */

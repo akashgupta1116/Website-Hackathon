@@ -1,20 +1,33 @@
 import React, { Component } from 'react';
+import Header from './header';
 import './portfolio.css';
+import Footer from './footer';
 
 
+const publicSectors = [
+    {imageName:'./aye_finance.jpg'},
+    {imageName:'./Coverfox-Logo.png'},
+    {imageName:'./ClearTax-logo.jpg'},
+    {imageName:'./unnamed.jpg'},
+    {imageName:"./acko-logo.jpg"},
+    {imageName:'./Chaayos-Logo.png'},
+    {imageName:'./capital-float-1200x600.jpg'},
+];
+const privateSector = [
+    {imageName:"./acko-logo.jpg"},
+    {imageName:'./unnamed.jpg'},
+    {imageName:'./aye_finance.jpg'},
+    {imageName:'./Chaayos-Logo.png'},
+    {imageName:'./Coverfox-Logo.png'},
+    {imageName:'./capital-float-1200x600.jpg'},
+    {imageName:'./ClearTax-logo.jpg'}
+];
 class Portfolio extends Component {
     constructor(props){
         super(props);
         this.state={
-            third2Elements:[
-                {imageName:"./acko-logo.jpg"},
-                {imageName:'./unnamed.jpg'},
-                {imageName:'./aye_finance.jpg'},
-                {imageName:'./Chaayos-Logo.png'},
-                {imageName:'./Coverfox-Logo.png'},
-                {imageName:'./capital-float-1200x600.jpg'},
-                {imageName:'./ClearTax-logo.jpg'}
-            ],
+            third2Elements:privateSector,
+            selectedCompany:'private',
             emailAdress:''
         }
     }
@@ -27,18 +40,7 @@ class Portfolio extends Component {
         return (
             <div className="portfolio-container">
                  <div className="portfolio-top">
-                    <header>
-                        <nav>
-                            <a className="home-link" href='#'>HOME</a>
-                            <ul className="nav-list">
-                                <li className="list-element"><a className="list-links" href="#">PORTFOLIO</a></li>
-                                <li className="list-element"><a className="list-links" href="#">TEAM</a></li>
-                                <li className="list-element"><a className="list-links" href="#">ABOUT</a></li>
-                                <li className="list-element"><a className="list-links" href="#">NEWS</a></li>
-                                <li className="list-element"><a className="list-links" href="#">REACH US</a></li>
-                            </ul>    
-                        </nav> 
-                    </header>   
+                 <Header/> 
                     <h1 className='portfolio-span'> Portfolio</h1>
                 </div>
                 <div className="second" >
@@ -47,8 +49,8 @@ class Portfolio extends Component {
                 </div>
                 <div className="third">
                     <div className="companies-div">
-                        <button className="private-companies">Private Companies</button>
-                        <button className="public-compamies">Public Companies</button>
+                        <button className={this.state.selectedCompany==='private'?'selectedCompany':'nonSelectedCompany'} onClick={()=>this.setState({third2Elements: privateSector, selectedCompany:'private'})}>Private Companies</button>
+                        <button className={this.state.selectedCompany==='public'?'selectedCompany':'nonSelectedCompany'} style={{'marginLeft':'2%'}} onClick={()=>this.setState({third2Elements: publicSectors, selectedCompany:'public'})}>Public Companies</button>
                     </div>
                     <hr/>
                     <ul className="portfolio-third1-list">
@@ -69,37 +71,7 @@ class Portfolio extends Component {
                           </div>
                         )}    
                     </div>
-                    <hr/>
-                    <div className="third5">
-                        <div className="third5-1">
-                            <p className="discover">Discover</p>
-                            <ul className="discover-list">
-                                <li ><a className="discover-list-element"href='#'>Portfolio</a></li>
-                                <li><a className="discover-list-element" href='#'>Team</a></li>
-                                <li><a className="discover-list-element" href='#'>About</a></li>
-                                <li><a className="discover-list-element" href='#'>News</a></li>
-                                <li><a className="discover-list-element" href='#'>Reach Us</a></li>
-                            </ul>    
-                        </div>
-                        <div className="third5-2">
-                            <p className="discover">Connect</p>
-                            <ul className="discover-list">
-                                <li ><a className="discover-list-element"href='#'>+91-124 4965500</a></li>
-                                <li><a className="discover-list-element" href='#'>info@saifpartners.com</a></li>
-                            </ul>    
-                        </div>
-                        <div className="third5-3">
-                            <p className="discover">Subscribe To Our Newsletter </p>
-                            <div className="form">
-                                <input className="email-address-input" onChange={this.emailHandler} required type="text" value={this.state.emailAdress} />
-                                <label for='name' className="label-name" > <span className="content-name">Type your email address here please</span></label>
-                            </div>
-                            <input className="subscribe-btn"  type="submit" value={this.state.subscribe}/>
-                        
-                        </div>    
-                    </div>  
-                    <hr/>  
-                    <p className="all-rights">@2017 SAIF Partners.All Rights Reserved</p>       
+                    <Footer />    
                 </div>    
             </div>
         );
